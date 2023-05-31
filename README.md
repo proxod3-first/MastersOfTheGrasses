@@ -1,118 +1,65 @@
-# MastersOfTheGrasses
+# Django-Ecommerce
 
-## Описание проекта
+Ecommerce website built with Django 2.2.3, Python 3.7.3, and AWS
 
-Данный проект представляет собой веб-приложение по теме "Маркетплейс капибар" по дисциплине "Технология разработки программных приложений" в 4 семестре 2 курса. 
+![image](https://user-images.githubusercontent.com/29988949/65267147-499fc580-dac9-11e9-90e8-eccbc93c7c3a.png)
 
-В нем реализованы главная страница, генерация сертификатов, тест, страница просмотра товара, корзина и форма входа и регистрации.
+`Product Slide`
 
-## Зависимости
+![image](https://user-images.githubusercontent.com/29988949/65999313-ff67fe00-e451-11e9-9ed9-fc7bce704f17.png)
 
-В проекте используются следующие технологии и фреймворки:
+`Shop Page`
+![image](https://user-images.githubusercontent.com/29988949/66098968-923f9000-e559-11e9-8691-cd5c2b181ca1.png)
 
-- HTML 5
-- CSS 3
-- Javascript
-- Bootstrap 5
-- Python 3.7.9
-- Django 2.2.3
-- Stripe 2.37.1
-- SQLite 3
-- Amazon AWS
-- Docker
-- setuptools 67.7.2
-- virtualenv 16.6.1
+`Product Detail Page`
+![image](https://user-images.githubusercontent.com/29988949/66291084-bff84200-e895-11e9-8d53-3aa23b29dbae.png)
 
-## Установка проекта
+`Cart Page`
+![image](https://user-images.githubusercontent.com/29988949/66291144-f0d87700-e895-11e9-8545-b8f93f799063.png)
 
-1. Клонируйте репозиторий проекта на свой локальный компьютер:
+`BillingAddress Page`
+![image](https://user-images.githubusercontent.com/29988949/66291542-013d2180-e897-11e9-8ea9-40afcb90cee2.png)
 
-   ```bash
-   git clone https://github.com/proxod3-first/MastersOfTheGrasses.git
-   ```
+`Stripe Payment Page`
+![image](https://user-images.githubusercontent.com/29988949/66291610-29c51b80-e897-11e9-8b47-20de35d6c1d0.png)
 
-2. Перейдите в директорию проекта:
+`Order Success Page`
+![image](https://user-images.githubusercontent.com/29988949/66291657-3e091880-e897-11e9-830b-6cf44e72a995.png)
 
-   ```bash
-   cd MastersOfTheGrasses
-   ```
-3. Настройка вирутального окружения:
+# Installation
 
-   ```bash
-   pip install virtualenv
-   python3 -m virtualenv env
-   ```
-4. Активация виртуального окружения:
+`pip install django`
 
-   For Linux/Mac OS:
-   ```bash 
-   source env/bin/activate
-   ```
-   
-   For Windows:
-   ```bash
-   env\Scripts\activate.bat
-   ```
-   
-   Для деактивации виртуального окружения:
-   ```bash
-   deactivate
-   ```
-   
-5. Установите необходимые зависимости:
+`virtualenv env`
 
-   ```bash
-   pip install -r requirements.txt
-   ```
+# For Mac/ Linux
 
-## Запуск проекта через командную строку
+`source env/bin/activate`
 
-1. Запустите веб-приложение:
+# For Window
 
-   ```bash
-   python manage.py makemigrations
-   python manage.py migrate
-   python manage.py runserver
-   ```
+`env\scripts\activate`
 
-2. Откройте веб-браузер и перейдите по адресу [http://127.0.0.1:8000/](http://127.0.0.1:8000/) для доступа к веб-приложению.
-3. Остановить приложение можно, например, с помощью комбинации клавиш CTRL+C.
+`pip install -r requirements.txt`
 
-## Запуск проекта через Docker
+`python manage.py makemigrations`
 
-1. Собрать контейнер:
+`python manage.py migrate`
 
-   ```bash
-   docker-compose build
-   ```
-   
-2. Запуск контейнера:
-   ```bash
-   docker-compose up
-   ```
-   
-3. Откройте веб-браузер и перейдите по адресу [http://127.0.0.1:8000/](http://127.0.0.1:8000/) для доступа к веб-приложению.
-4. Остановить приложение можно, например, с помощью комбинации клавиш CTRL+C.
+`python manage.py runserver`
 
-## Admin Login
+# For Admin Login
 
-   ```bash
-    python manage.py createsuperuser
-    Username : admin
-    Password : 12345678
-   ```
-   
-## Команда
+```python
+python manage.py createsuperuser
+Username : admin
+Password : 12345678
+```
+# Demo
 
-В разработке проекта участвовала следующая команда:
+http://djangoecommerce.pythonanywhere.com
 
-- Проходцев Сергей ("Машина"), разработчик фронтенда и немного бэкенда
-- Дмитрий Пискун ("Ярослав Прокупон"), разработчик бэкенда и баз данных
-- Татьяна Новоселова ("Затейница"), разработчик фронтенда и тестировщик
+# HTML Template
 
-## Лицензия
+https://colorlib.com/etc/fashe/index.html
 
-Данный проект доступен под лицензией Unlicense.
-
-
-`(Скриншоты проекта появятся чуть позже...)`

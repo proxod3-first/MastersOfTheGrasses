@@ -1,0 +1,16 @@
+version: '3'
+services:
+  web:
+    image: mastersofthegrasses
+    command: python manage.py runserver 0.0.0.0:8000
+    build: .
+    ports:
+     - "127.0.0.1:8000:8000"
+    environment:
+     - DB_URL="sqlite:///data/db.sqlite3"
+    volumes:
+     - .:/app  # Mount the code to container to allow edits without rebuild
+     - data:/data # Mount data directory to container to persist data
+
+volumes:
+  data:
